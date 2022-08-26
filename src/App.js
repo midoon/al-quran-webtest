@@ -1,11 +1,13 @@
-import Carousel from "./component/Carousel";
+import { Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import SurahDetail from "./page/SurahDetail";
 
 function App() {
   return (
-    <div className="App">
-      <Carousel />
-      {/* list bawah  */}
-    </div>
+    <Routes>
+      <Route path="/" exect element={<Home />} />
+      <Route path="/surah-detail/:id" element={<SurahDetail />} />
+    </Routes>
   );
 }
 
