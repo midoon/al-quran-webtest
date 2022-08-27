@@ -7,7 +7,6 @@ const Card = ({ surah }) => {
   const handleSurah = (noSurah) => {
     const url = `/surah-detail/${noSurah}`;
     // return <Navigate to={url} replace />;
-    console.log(noSurah);
     navigate(url);
   };
 
@@ -17,15 +16,15 @@ const Card = ({ surah }) => {
       return (
         <div key={i}>
           <div
-            className="card   shadow-xl bg-slate-700 m-4"
+            className="card   shadow-xl bg-slate-200 m-4"
             onClick={() => {
               handleSurah(data.nomor);
             }}
           >
             <div className="card-body">
-              <h1 className="text-2xl">{data.asma}</h1>
-              <h2 className="card-title">{data.arti}</h2>
-              <p>{data.ayat} Ayat</p>
+              <h1 className="text-2xl text-secondary">{data.asma}</h1>
+              <h2 className="card-title text-secondary">{data.arti}</h2>
+              <p className="text-secondary">{data.ayat} Ayat</p>
               <div className="card-actions justify-end">
                 <audio className="my-2" controls src={data.audio}></audio>
               </div>
