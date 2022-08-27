@@ -22,7 +22,10 @@ const Card = ({ surah }) => {
             }}
           >
             <div className="card-body">
-              <h1 className="text-2xl text-secondary">{data.asma}</h1>
+              <div className="flex justify-between">
+                <h1 className="text-2xl text-secondary">{data.nomor}</h1>
+                <h1 className="text-2xl text-secondary">{data.asma}</h1>
+              </div>
               <h2 className="card-title text-secondary">{data.arti}</h2>
               <p className="text-secondary">{data.ayat} Ayat</p>
               <div className="card-actions justify-end">

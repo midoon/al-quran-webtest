@@ -24,6 +24,8 @@ function Home() {
     getSurah();
   }, []);
 
+  // console.log("data surah:", surah);
+
   return (
     <div className="Home bg-white">
       <Navbar />
@@ -32,8 +34,8 @@ function Home() {
       </div>
 
       {loading ? (
-        <div className="bg-white w-full h-full flex justify-center items-center">
-          <h1 className="text-secondary text-5xl">Loading</h1>
+        <div className="bg-white w-full h-screen flex justify-center ">
+          <h1 className="text-secondary text-5xl mt-40">Loading...</h1>
         </div>
       ) : (
         <div className="container px-4">
