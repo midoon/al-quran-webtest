@@ -60,7 +60,7 @@ const SurahDetail = () => {
       <Navbar />
       {loading ? (
         <div className="bg-white w-full h-screen flex justify-center items-center">
-          <h1 className="text-secondary text-5xl">Loading</h1>
+          <h1 className="text-secondary text-5xl">Loading...</h1>
         </div>
       ) : (
         <>
