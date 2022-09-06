@@ -6,6 +6,7 @@ import Navbar from "../component/Navbar";
 function Home() {
   const [surah, setSurah] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [isSearch, setIsSearch] = useState(false);
 
   const getSurah = async () => {
     setLoading(true);
